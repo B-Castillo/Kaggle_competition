@@ -4,6 +4,7 @@
 # [Datos](data/train.csv)
 
 |**Datso**| **Significado**|
+|----|---|
 | **id** | solo para archivos de envío de prueba y muestra, id para identificación de muestra de predicción.|
 |**price**| precio en USD.|
 |**carat**| peso del diamante.|
