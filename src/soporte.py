@@ -110,16 +110,25 @@ def ordinal_map_con(df, columna, list_val):
         count = 0
         for i, f in df.iterrows():
             if val == f[columna]:
-                precio_m = precio_m + round(f["price"], 2)
+                precio_m = precio_m + round(f["price"], 6)
                 count = count + 1
         
-        ordinal_dict[val] = round((precio_m/count), 2)
+        ordinal_dict[val] = round((precio_m/count), 6)
 
         nuevo_nombre = columna + "_mapeada"
 
         df[nuevo_nombre] = df[columna].map(ordinal_dict)
     
-    return df
+    return ordinal_dict
+
+def re_trans(df, columna, dic_val):
+    lista = []
+    for i, f in df.iterrows():
+            lista.append(dic_val[f[columna]])
+    
+    f[columna] = lista
+
+    return lista
 
 def ordinal_encoder(df, columna, orden, num_modelo):
     ordinal = OrdinalEncoder(categories = [orden], dtype = int)
