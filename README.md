@@ -1,31 +1,23 @@
 # Kaggle_competition
 ---
 
-# Datos
+# [Datos](data/train.csv)
 
-**id**: solo para archivos de envío de prueba y muestra, id para identificación de muestra de predicción.
+|**Datso**| **Significado**|
+| **id** | solo para archivos de envío de prueba y muestra, id para identificación de muestra de predicción.|
+|**price**| precio en USD.|
+|**carat**| peso del diamante.|
+|**cut**| calidad del corte (Regular, Buena, Muy buena, Premium, Ideal).|
+|**color**| color diamante.|
+|**clarity**| una medida de cuán claro es el diamante.|
+|**x**| longitud en mm.|
+|**y**| ancho en mm.|
+|**z**| profundidad en mm.|
+|**depth**| porcentaje de profundidad total = z / media (x, y) = 2 * z / (x + y) (43--79).|
+|**table**| ancho de la parte superior del diamante en relación con el punto más ancho (43--95).|
 
-**price**: precio en USD.
-
-**carat**: peso del diamante.
-
-**cut**: calidad del corte (Regular, Buena, Muy buena, Premium, Ideal).
-
-**color**: color diamante.
-
-**clarity**: una medida de cuán claro es el diamante.
-
-**x**: longitud en mm.
-
-**y**: ancho en mm.
-
-**z**: profundidad en mm.
-
-**depth**: porcentaje de profundidad total = z / media (x, y) = 2 * z / (x + y) (43--79).
-
-**table**: ancho de la parte superior del diamante en relación con el punto más ancho (43--95).
-
-# Análisis exploratorios
+---
+# [Análisis exploratorios](notebooks/1.1%20Exploraci%C3%B3n.ipynb)
 
 **Selección de variables predictoras:**
 
@@ -33,4 +25,11 @@ Durante la exploración de los datos y su relevancia respecto a la variable resp
 
 **Gestión de Outliers:**
 
+---
+# [Mejor modelo](notebooks/2.4%20Modelo_4.ipynb)
+
+
+
+---
+# [Predicción](notebooks/1.1%20Exploraci%C3%B3n.ipynb)
 
